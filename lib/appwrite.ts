@@ -33,10 +33,10 @@ export async function createAdminClient() {
       return new Account(client);
     },
     get database() {
-        return Databases(client);
+        return new Databases(client);
     },
     get user() {
-        return Users(client);
+        return new Users(client);
     },
   };
 }
